@@ -1,0 +1,17 @@
+1. Character movement (done)
+2. Map Generation (done)
+3. Starter Weapons (done)
+4. Enemy AI
+5. Enemy Stats
+6. Characters and pickups
+7. Add-ons
+8. Enemy spawn
+9. Items and inventory
+10. Game UI
+11. Damage number and other popup text
+
+*Additional updates if necessary
+-Weapon evolutions
+-More Stages
+-Stat system
+-Sound effects
