@@ -50,21 +50,22 @@ public class PlayerMovement : MonoBehaviour
 
         moveDir = new Vector2(moveX, moveY).normalized;
 
-        if (moveDir.x != 0)
-        {
-            lastHorizontalVector = moveDir.x;
-            lastMovedVector = new Vector2(lastHorizontalVector, 0f);
-        }
-        if (moveDir.y != 0)
-        {
-            lastVerticalVector = moveDir.y;
-            lastMovedVector = new Vector2(0f, lastVerticalVector);
-        }
+        if (moveDir.x != 0) lastHorizontalVector = moveDir.x;
+        if (moveDir.y != 0) lastVerticalVector = moveDir.y;
 
-        if(moveDir.x != 0)
+        if (moveDir.x != 0 && moveDir.y != 0) // diagonal
         {
             lastMovedVector = new Vector2(lastHorizontalVector, lastVerticalVector);
         }
+        else if (moveDir.x != 0) // purely horizontal
+        {
+            lastMovedVector = new Vector2(lastHorizontalVector, 0f);
+        }
+        else if (moveDir.y != 0) // purely vertical
+        {
+            lastMovedVector = new Vector2(0f, lastVerticalVector);
+        }
+        // if moveDir is zero (idle), lastMovedVector stays unchanged — correct behaviour
     }
 
     void Move()

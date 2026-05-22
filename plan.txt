@@ -1,8 +1,8 @@
 1. Character movement (done)
 2. Map Generation (done)
 3. Starter Weapons (done)
-4. Enemy AI
-5. Enemy Stats
+4. Enemy AI (done)
+5. Enemy and Weapon Stats (done)
 6. Characters and pickups
 7. Add-ons
 8. Enemy spawn
