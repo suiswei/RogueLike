@@ -3,8 +3,8 @@
 3. Starter Weapons (done)
 4. Enemy AI (done)
 5. Enemy and Weapon Stats (done)
-6. Characters and pickups
-7. Add-ons
+6. Characters and pickups (done)
+7. Character Add-ons (done)
 8. Enemy spawn
 9. Items and inventory
 10. Game UI

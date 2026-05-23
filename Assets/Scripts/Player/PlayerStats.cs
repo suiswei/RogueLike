@@ -4,13 +4,22 @@ using System.Collections.Generic;
 
 public class PlayerStats : MonoBehaviour
 {
-    public CharacterScriptableObject characterData;
+    CharacterScriptableObject characterData;
 
-    float currentHealth;
-    float currentRecovery;
-    float currentMoveSpeed;
-    float currentMight;
-    float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentHealth;
+    [HideInInspector]
+    public float currentRecovery;
+    [HideInInspector]
+    public float currentMoveSpeed;
+    [HideInInspector]
+    public float currentMight;
+    [HideInInspector]
+    public float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentMagnet;
+
+    public List<GameObject> spawnedWeapons;
 
     [Header("Experience/Level")]
     public int experience = 0;
@@ -34,11 +43,29 @@ public class PlayerStats : MonoBehaviour
 
     void Awake()
     {
-        currentHealth = characterData.MaxHealth;
-        currentRecovery = characterData.Recovery;
-        currentMoveSpeed = characterData.MoveSpeed;
-        currentMight = characterData.Might;
-        currentProjectileSpeed = characterData.ProjectileSpeed;
+        // 1. Get the data first
+        characterData = CharacterSelector.GetData();
+
+        // 2. Cache ALL values locally before destroying the singleton
+        float maxHealth        = characterData.MaxHealth;
+        float recovery         = characterData.Recovery;
+        float moveSpeed        = characterData.MoveSpeed;
+        float might            = characterData.Might;
+        float projectileSpeed  = characterData.ProjectileSpeed;
+        float magnet           = characterData.Magnet;
+
+        // 3. NOW destroy the singleton
+        CharacterSelector.instance.DestroySingleton();
+
+        // 4. Apply cached values — no dependency on singleton anymore
+        currentHealth          = maxHealth;
+        currentRecovery        = recovery;
+        currentMoveSpeed       = moveSpeed;
+        currentMight           = might;
+        currentProjectileSpeed = projectileSpeed;
+        currentMagnet          = magnet;
+
+        SpawnWeapon(characterData.StartingWeapon);
     }
 
     void Start()
@@ -56,6 +83,8 @@ public class PlayerStats : MonoBehaviour
         {
             isInvincible = false;
         }
+
+        Recover();
     }
 
     public void IncreaseExperience(int amount)
@@ -115,6 +144,25 @@ public class PlayerStats : MonoBehaviour
                 currentHealth = characterData.MaxHealth;
             }
         }
+    }
+
+    void Recover()
+    {
+        if(currentHealth < characterData.MaxHealth)
+        {
+            currentHealth += currentRecovery * Time.deltaTime;
+            if(currentHealth > characterData.MaxHealth)
+            {
+                currentHealth = characterData.MaxHealth;
+            }
+        }
+    }
+
+    public void SpawnWeapon(GameObject weapon)
+    {
+        GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
+        spawnedWeapon.transform.SetParent(transform);
+        spawnedWeapons.Add(spawnedWeapon);
     }
 }
 

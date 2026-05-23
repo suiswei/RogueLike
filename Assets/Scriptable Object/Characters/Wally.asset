@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54436b056d69c0f479babc5fe21fecfe, type: 3}
   m_Name: Wally
   m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptableObject
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 4493767182695785800, guid: 5a9332c01d70af848bee2f6a65de55ca, type: 3}
   maxHealth: 1000
-  recovery: 0
+  recovery: 1
   moveSpeed: 5
   might: 0
   projectileSpeed: 0
+  magnet: 1.6

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54436b056d69c0f479babc5fe21fecfe, type: 3}
+  m_Name: Garlic Character
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptableObject
+  startingWeapon: {fileID: 5820915814321058596, guid: 11a90585e0ab42b43adbf20157455e25, type: 3}
+  maxHealth: 1000
+  recovery: 1
+  moveSpeed: 5
+  might: 0
+  projectileSpeed: 0
+  magnet: 1.6
