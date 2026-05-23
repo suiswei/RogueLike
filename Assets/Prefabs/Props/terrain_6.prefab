@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 243149904957499610}
   - component: {fileID: 808977423056882539}
   m_Layer: 0
-  m_Name: terrain_64
-  m_TagString: Untagged
+  m_Name: terrain_6
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

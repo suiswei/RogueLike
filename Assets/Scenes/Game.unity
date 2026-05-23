@@ -228,6 +228,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2889424471482077018, guid: c330f0b645c504f48a2519a4b2d7b424, type: 3}
+      propertyPath: drops.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2889424471482077018, guid: c330f0b645c504f48a2519a4b2d7b424, type: 3}
+      propertyPath: drops.Array.data[0].name
+      value: Blue Gem
+      objectReference: {fileID: 0}
+    - target: {fileID: -2889424471482077018, guid: c330f0b645c504f48a2519a4b2d7b424, type: 3}
+      propertyPath: drops.Array.data[0].dropRate
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -2889424471482077018, guid: c330f0b645c504f48a2519a4b2d7b424, type: 3}
+      propertyPath: drops.Array.data[0].itemPrefab
+      value: 
+      objectReference: {fileID: 9199065242593612069, guid: 7d5a59ed5d65e9749ae823f4c3b568a1, type: 3}
     - target: {fileID: 4530831844339138182, guid: c330f0b645c504f48a2519a4b2d7b424, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.232927
@@ -558,7 +574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &823773044
 Transform:
   m_ObjectHideFlags: 0
@@ -602,6 +618,8 @@ GameObject:
   - component: {fileID: 1247024866}
   - component: {fileID: 1247024867}
   - component: {fileID: 1247024868}
+  - component: {fileID: 1247024869}
+  - component: {fileID: 1247024870}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -770,11 +788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b193c51367b6b4d90ae77d12cc8639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
   lastHorizontalVector: 0
   lastVerticalVector: 0
   moveDir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: deae5451832b8c84080a9f2e9a5be2ed, type: 2}
 --- !u!114 &1247024867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,6 +827,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1247024869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247024861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa067d0cf8ad1934088e0a9e3d2e3cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollector
+--- !u!114 &1247024870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247024861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28467291076a29408a65f9ba5799009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  characterData: {fileID: 11400000, guid: deae5451832b8c84080a9f2e9a5be2ed, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 0
+  invincibilityDuration: 0.5
+  levelRanges:
+  - startLevel: 1
+    endLevel: 3
+    experienceCapIncrease: 100
+  - startLevel: 4
+    endLevel: 5
+    experienceCapIncrease: 200
 --- !u!1001 &3903713292595633166
 PrefabInstance:
   m_ObjectHideFlags: 0
