@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Knife Character
+  m_Text: Select Wally
 --- !u!222 &151472483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Garlic Character
+  m_Text: Select Jose
 --- !u!222 &455872136
 CanvasRenderer:
   m_ObjectHideFlags: 0
