@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e700e31cd51bbad41b3d077c6f3cd58d, type: 3}
+  m_Name: Garlic Weapon
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptableObject
+  prefab: {fileID: 2488320024829399548, guid: 24aa201dae4aa5a419586af0ee50ec9b, type: 3}
+  damage: 5
+  speed: 0
+  cooldownDuration: 3
+  pierce: 0
+  level: 1
+  nextLevelPrefab: {fileID: 5820915814321058596, guid: 3666df5ac32a0834ea25303a80f630df, type: 3}
+  icon: {fileID: -5200552542460365651, guid: 009ec3fcb54190e4b923d0a47c605eb3, type: 3}

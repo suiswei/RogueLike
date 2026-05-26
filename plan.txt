@@ -5,8 +5,8 @@
 5. Enemy and Weapon Stats (done)
 6. Characters and pickups (done)
 7. Character Add-ons (done)
-8. Enemy spawn
-9. Items and inventory
+8. Enemy spawn (done)
+9. Items and inventory (done)
 10. Game UI
 11. Damage number and other popup text
 
