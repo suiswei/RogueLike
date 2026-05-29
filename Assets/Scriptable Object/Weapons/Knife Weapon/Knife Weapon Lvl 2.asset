@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptableObject
   prefab: {fileID: 136753575956535990, guid: f9c4ed7e6ade8494cae636e0bf611115, type: 3}
   damage: 5
-  speed: 20
+  speed: 30
   cooldownDuration: 1
   pierce: 2
   level: 2
