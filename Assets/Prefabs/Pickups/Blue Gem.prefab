@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cd0ccdc2b32c340897ce34f16d4ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceGem
-  experienceGranted: 100
+  experienceGranted: 30
 --- !u!58 &-9111299417623311328
 CircleCollider2D:
   m_ObjectHideFlags: 0

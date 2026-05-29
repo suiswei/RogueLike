@@ -19,4 +19,6 @@ MonoBehaviour:
   pierce: 1
   level: 1
   nextLevelPrefab: {fileID: 4493767182695785800, guid: 835aab188da147542a2547e6d7198776, type: 3}
+  name: Knife
+  description: Shoots knives in the direction the player is facing
   icon: {fileID: 4899227789284837310, guid: 009ec3fcb54190e4b923d0a47c605eb3, type: 3}

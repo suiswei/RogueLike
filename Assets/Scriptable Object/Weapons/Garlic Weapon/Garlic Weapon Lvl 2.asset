@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e700e31cd51bbad41b3d077c6f3cd58d, type: 3}
   m_Name: Garlic Weapon Lvl 2
   m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptableObject
-  prefab: {fileID: 2488320024829399548, guid: 24aa201dae4aa5a419586af0ee50ec9b, type: 3}
-  damage: 5
+  prefab: {fileID: 2488320024829399548, guid: f622c9a83bbb23946b7db4f17c931048, type: 3}
+  damage: 7
   speed: 0
-  cooldownDuration: 2.5
+  cooldownDuration: 2
   pierce: 0
   level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Garlic Level 2
+  description: Dmg +2, and CD -1
   icon: {fileID: -5200552542460365651, guid: 009ec3fcb54190e4b923d0a47c605eb3, type: 3}

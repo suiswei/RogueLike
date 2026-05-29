@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057f833940618ca4588c1ba59f9032df, type: 3}
   m_Name: Boots Passive Item Lvl 2
   m_EditorClassIdentifier: Assembly-CSharp::PassiveItemScriptableObject
-  multiplier: 75
+  multiplier: 50
   level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Boots Level 2
+  description: Increase movement speed by 50%
   icon: {fileID: 4295351123785373679, guid: db275b1b8d6be034db925d7b4131e058, type: 3}

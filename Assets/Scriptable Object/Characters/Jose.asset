@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54436b056d69c0f479babc5fe21fecfe, type: 3}
   m_Name: Jose
   m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptableObject
+  icon: {fileID: 2036938371270781659, guid: 543931bc2173f49478ae0ea854b3c8a8, type: 3}
+  name: Jose
   startingWeapon: {fileID: 5820915814321058596, guid: 11a90585e0ab42b43adbf20157455e25, type: 3}
-  maxHealth: 1000
+  maxHealth: 200
   recovery: 1
   moveSpeed: 5
   might: 1

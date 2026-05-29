@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057f833940618ca4588c1ba59f9032df, type: 3}
   m_Name: Barbell Passive Item Lvl 2
   m_EditorClassIdentifier: Assembly-CSharp::PassiveItemScriptableObject
-  multiplier: 150
+  multiplier: 100
   level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Barbell Level 2
+  description: Increase Might by 100%
   icon: {fileID: 6334257032871943757, guid: 19765180ea40eac4a8c1a7a42fa6ff8d, type: 3}

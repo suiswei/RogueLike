@@ -7,7 +7,7 @@
 7. Character Add-ons (done)
 8. Enemy spawn (done)
 9. Items and inventory (done)
-10. Game UI
+10. Game UI (done)
 11. Damage number and other popup text
 
 *Additional updates if necessary

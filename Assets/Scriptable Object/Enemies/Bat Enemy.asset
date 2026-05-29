@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bat Enemy
   m_EditorClassIdentifier: Assembly-CSharp::EnemyScriptableObject
   moveSpeed: 2
-  maxHealth: 10
-  damage: 0
+  maxHealth: 5
+  damage: 10
