@@ -4838,7 +4838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1034681632
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7691,7 +7691,7 @@ MonoBehaviour:
   - {fileID: 91768548}
   - {fileID: 748936903}
   - {fileID: 1282162769}
-  timeLimit: 300
+  timeLimit: 180
   stopwatchDisplay: {fileID: 85031843}
   isGameOver: 0
   choosingUpgrade: 0
@@ -7873,6 +7873,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475649892}
   m_CullTransparentMesh: 1
+--- !u!1 &1497931692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6539205112794498013, guid: 5c8014b2f40dc7449bd9076dbec2ff23, type: 3}
+  m_PrefabInstance: {fileID: 3903713292595633166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1497931693
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497931692}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 4890938287881554280, guid: 20cfcab12a488944582ac134c8d0a904, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.71875, y: 1.65625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!95 &1497931694
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497931692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de5192101f9281b438073d6297dca96c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1509451499
 GameObject:
   m_ObjectHideFlags: 0
@@ -9766,22 +9852,31 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 6897910609007319822, guid: 144a8d1e195f6b143a41c10f8afd3e85, type: 3}
     waveQuota: 0
-    spawnInterval: 2
+    spawnInterval: 1
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
-    - enemyName: Red Bat
+    - enemyName: Goblin
       enemyCount: 30
       spawnCount: 0
-      enemyPrefab: {fileID: 6897910609007319822, guid: 144a8d1e195f6b143a41c10f8afd3e85, type: 3}
+      enemyPrefab: {fileID: 183699195726988036, guid: 6d81d0c560963aa4eb7671af17140603, type: 3}
     waveQuota: 0
-    spawnInterval: 3
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: Skeleton
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 1766439032574504815, guid: 00eb2e92c872c834fae95a6a7b3c633c, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.5
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 20
+  maxEnemiesAllowed: 999
   maxEnemiesReached: 0
-  waveInterval: 10
+  waveInterval: 20
   relativeSpawnPoints:
   - {fileID: 691067263}
   - {fileID: 1943906999}
@@ -10869,7 +10964,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6539205112794498013, guid: 5c8014b2f40dc7449bd9076dbec2ff23, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1497931694}
+    - targetCorrespondingSourceObject: {fileID: 6539205112794498013, guid: 5c8014b2f40dc7449bd9076dbec2ff23, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1497931693}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8014b2f40dc7449bd9076dbec2ff23, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
